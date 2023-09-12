@@ -1,12 +1,13 @@
 // Importing Express
+require("dotenv").config()
 const express = require('express')
 const cors=require("cors")
 //We are creating our server by calling express
 const app = express()
 
 //As to be above 1024 
-const port = 3000
-
+const port = process.env.PORT
+//process.env.PORT
 const fruits=require("./fruits.json")
 
 // Middleware-code that is executed between teh request coming in and the response sent
