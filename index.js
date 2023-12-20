@@ -6,7 +6,7 @@ const cors=require("cors")
 const app = express()
 
 //As to be above 1024 
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 //process.env.PORT
 const fruits=require("./fruits.json")
 
